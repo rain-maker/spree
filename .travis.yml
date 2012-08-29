@@ -6,7 +6,7 @@ env:
 script:
   - "export DISPLAY=:99.0"
   - "alias set_gemfile='export BUNDLE_GEMFILE=\"`pwd`/Gemfile\"'"
-  - "cd ../core; set_gemfile; bundle install --quiet; bundle exec rspec spec/models/order/callbacks_spec.rb"
+  - "cd core; set_gemfile; bundle install --quiet; bundle exec rspec spec/models/order/callbacks_spec.rb"
 
 notifications:
   email:
